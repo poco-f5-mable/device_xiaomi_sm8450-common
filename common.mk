@@ -49,6 +49,9 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 BOARD_API_LEVEL := 31
 BOARD_SHIPPING_API_LEVEL := 31
 
+# Viper
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Atrace
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
