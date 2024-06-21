@@ -120,10 +120,14 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7.vendor \
     android.hardware.graphics.common-V4-ndk \
     camera.device@1.0-impl \
+    libcamera_metadata.vendor \
     libcamera2ndk_vendor \
     libexif.vendor \
     libjpeg.vendor \
     liblz4.vendor \
+    libutilscallstack.vendor \
+    libutilscallstack.vendor:64 \
+    libyuv.vendor \
     vendor.qti.hardware.camera.aon@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
@@ -140,6 +144,10 @@ PRODUCT_COPY_FILES += \
 # Capabilityconfigstore
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+
+# CURL
+PRODUCT_PACKAGES += \
+    libcurl.vendor:64
 
 # Display
 PRODUCT_PACKAGES += \
@@ -309,6 +317,7 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libgui_vendor \
     libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor \
     libstagefrighthw
 
 PRODUCT_PACKAGES += \
@@ -411,7 +420,8 @@ PRODUCT_PACKAGES += \
     libcurl.vendor \
     libjsoncpp.vendor \
     libnetutils.vendor \
-    libsqlite.vendor
+    libsqlite.vendor \
+    libsqlite.vendor:64
 
 # QTI
 PRODUCT_PACKAGES += \
@@ -601,6 +611,7 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
+    libpng.vendor \
     libwfdaac_vendor
 
 # WiFi firmware symlinks
