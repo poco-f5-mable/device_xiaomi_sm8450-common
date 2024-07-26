@@ -491,6 +491,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
+# Scudo
+PRODUCT_USE_SCUDO := true
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
