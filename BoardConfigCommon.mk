@@ -211,6 +211,9 @@ endif
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := taro
 
+# Power
+TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
+
 # PowerShare
 $(call soong_config_set, XIAOMI_POWERSHARE, WIRELESS_TX_ENABLE_PATH, /sys/class/qcom-battery/reverse_chg_mode)
 
